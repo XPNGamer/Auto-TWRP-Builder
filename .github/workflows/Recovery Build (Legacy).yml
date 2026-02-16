@@ -6,7 +6,7 @@ on:
       IMG_URL:
         description: 'IMG_ URL'
         required: true
-        default: 'https://github.com/KoCleo/Auto-Twrp-Builder/raw/master/recovery.img'
+        default: 'https://github.com/XPNGamer/Auto-TWRP-Builder/blob/master/boot_b.img'
       MANIFEST_URL:
         description: 'MANIFEST_URL (if want to use SSH keys, use git@github.com:XXXXX)'
         required: true
@@ -23,7 +23,7 @@ on:
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
